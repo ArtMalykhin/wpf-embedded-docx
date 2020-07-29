@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Open file..." Click="OnOpenFileClicked"/>
+            </Menu>
+            <FlowDocumentScrollViewer Name="FlowDocumentScrollViewer"></FlowDocumentScrollViewer>
+        </DockPanel>
     </Grid>
 </Window>
